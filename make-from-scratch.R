@@ -20,8 +20,8 @@ library(warbase)
 games.grabbed <- compile.all.games(wait=0, 
                                    roster.dropin=rosterprefab,
                                    ## Want to use the existing games table? Uncomment this one.
-                                   ## new.game.table=filter (gamesstart, season >= 20072008),
-                                   new.game.table=filter (gamesstart, season >= 20132014),
+                                   new.game.table=filter (gamesstart, season >= 20072008),
+                                   ## new.game.table=filter (gamesstart, season >= 20132014),
                                    reload.games=TRUE)
 
 make.common()
